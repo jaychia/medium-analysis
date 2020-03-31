@@ -4,19 +4,15 @@
 #
 #    pip-compile --extra-index-url=https://d567ad36b84ba25f3a26bad068c5288864b1655ff43c3259:@packagecloud.io/freenome/python/pypi/simple
 #
---extra-index-url https://d567ad36b84ba25f3a26bad068c5288864b1655ff43c3259:@packagecloud.io/freenome/python/pypi/simple
-
-appnope==0.1.0            # via ipykernel, ipython
 attrs==19.3.0             # via jsonschema
 backcall==0.1.0           # via ipython
-bleach==3.1.1             # via nbconvert
+bleach==3.1.4             # via nbconvert
 certifi==2019.11.28       # via requests
 chardet==3.0.4            # via requests
 decorator==4.4.2          # via ipython, traitlets
 defusedxml==0.6.0         # via nbconvert
 entrypoints==0.3          # via nbconvert
 idna==2.9                 # via requests
-importlib-metadata==1.5.0  # via jsonschema
 ipykernel==5.1.4          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
 ipython-genutils==0.2.0   # via nbformat, notebook, qtconsole, traitlets
 ipython==7.13.0           # via ipykernel, ipywidgets, jupyter-console
@@ -28,13 +24,13 @@ jsonschema==3.2.0         # via nbformat
 jupyter-client==6.0.0     # via ipykernel, jupyter-console, notebook, qtconsole
 jupyter-console==6.1.0    # via jupyter
 jupyter-core==4.6.3       # via jupyter-client, nbconvert, nbformat, notebook, qtconsole
-jupyter==1.0.0
+jupyter==1.0.0            # via -r requirements.in
 markupsafe==1.1.1         # via jinja2
 mistune==0.8.4            # via nbconvert
 nbconvert==5.6.1          # via jupyter, notebook
 nbformat==5.0.4           # via ipywidgets, nbconvert, notebook
 notebook==6.0.3           # via jupyter, widgetsnbextension
-numpy==1.18.1
+numpy==1.18.1             # via -r requirements.in, scikit-learn, scipy
 pandocfilters==1.4.2      # via nbconvert
 parso==0.6.2              # via jedi
 pexpect==4.8.0            # via ipython
@@ -48,12 +44,12 @@ python-dateutil==2.8.1    # via jupyter-client
 pyzmq==19.0.0             # via jupyter-client, notebook
 qtconsole==4.7.0          # via jupyter
 qtpy==1.9.0               # via qtconsole
-requests==2.23.0
+requests==2.23.0          # via -r requirements.in
 scikit-learn==0.22.2      # via sklearn
 scipy==1.4.1              # via scikit-learn
 send2trash==1.5.0         # via notebook
-six==1.14.0               # via bleach, jsonschema, pyrsistent, python-dateutil, traitlets
-sklearn==0.0
+six==1.14.0               # via bleach, jsonschema, python-dateutil, traitlets
+sklearn==0.0              # via -r requirements.in
 terminado==0.8.3          # via notebook
 testpath==0.4.4           # via nbconvert
 tornado==6.0.3            # via ipykernel, jupyter-client, notebook, terminado
@@ -62,7 +58,6 @@ urllib3==1.25.8           # via requests
 wcwidth==0.1.8            # via prompt-toolkit
 webencodings==0.5.1       # via bleach
 widgetsnbextension==3.5.1  # via ipywidgets
-zipp==3.0.0               # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools==45.2.0        # via ipython, jsonschema
+# setuptools
